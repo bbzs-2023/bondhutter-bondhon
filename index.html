@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বন্ধুত্বের বন্ধন যুব সংঘ</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f8f6;
+            color: #26352d;
+        }
+
+        header {
+            background: #087443;
+            color: white;
+            padding: 22px 7%;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        nav {
+            background: #075b36;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 15px;
+        }
+
+        .hero {
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #e1f5e9, #c2ead1);
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            color: #087443;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 650px;
+        }
+
+        .hero button {
+            margin-top: 25px;
+            padding: 13px 28px;
+            background: #087443;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .section {
+            padding: 55px 7%;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #087443;
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        .card h3 {
+            color: #087443;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            background: #075b36;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 23px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .hero h2 {
+                font-size: 27px;
+            }
+        }
+   /* Registration Form Design */
+
+#registration {
+    background: #eaf5ee;
+}
+
+#registration h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+#registrationForm {
+    max-width: 450px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px #00000015;
+}
+
+#registrationForm input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+#registrationForm input:focus {
+    border-color: #087443;
+}
+
+#registrationForm button {
+    width: 100%;
+    padding: 14px;
+    background: #087443;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#registrationForm button:hover {
+    background: #075b36;
+} </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>বন্ধুত্বের বন্ধন যুব সংঘ</h1>
+        <p>ঐক্য, মানবতা ও উন্নয়নের পথে আমরা একসাথে</p>
+    </header>
+
+    <nav>
+        <a href="#home">হোম</a>
+        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#activities">কার্যক্রম</a>
+        <a href="#contact">যোগাযোগ</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>স্বাগতম বন্ধুত্বের বন্ধনে</h2>
+        <p>
+            বন্ধুত্ব, সহযোগিতা ও মানবতার আদর্শ নিয়ে
+            আমরা কাজ করি একটি সুন্দর সমাজ গড়ার লক্ষ্যে।
+        </p>
+        <button onclick="alert('আমাদের ওয়েবসাইটে স্বাগতম!')">
+            আমাদের সম্পর্কে জানুন
+        </button>
+    </section>
+
+    <section class="section" id="about">
+        <h2>আমাদের সম্পর্কে</h2>
+        <p>
+            বন্ধুত্বের বন্ধন যুব সংঘ একটি সামাজিক ও
+            মানবিক সংগঠন। ঐক্য ও সহযোগিতার মাধ্যমে
+            সমাজের উন্নয়নে কাজ করাই আমাদের লক্ষ্য।
+        </p>
+    </section>
+
+    <section class="section" id="activities">
+        <h2>আমাদের কার্যক্রম</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>সামাজিক সেবা</h3>
+                <p>মানুষের কল্যাণে সামাজিক কার্যক্রম।</p>
+            </div>
+
+            <div class="card">
+                <h3>মানবিক সহযোগিতা</h3>
+                <p>অসহায় মানুষের পাশে দাঁড়ানো।</p>
+            </div>
+
+            <div class="card">
+                <h3>যুব উন্নয়ন</h3>
+                <p>যুবসমাজকে ঐক্যবদ্ধ ও দক্ষ করে গড়ে তোলা।</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h3>বন্ধুত্বের বন্ধন যুব সংঘ</h3>
+        <p>ঐক্যই শক্তি, বন্ধুত্বই বন্ধন</p>
+        <p>© 2026 সর্বস্বত্ব সংরক্ষিত</p>
+    </footer>
+<div class="section" id="registration">
+    <h2>নতুন সদস্য নিবন্ধন</h2>
+
+    <form id="registrationForm">
+
+        <input type="text" placeholder="আপনার পূর্ণ নাম" required>
+
+        <input type="tel" placeholder="মোবাইল নম্বর" required>
+
+        <input type="text" placeholder="আপনার ঠিকানা" required>
+
+        <input type="email" placeholder="ইমেইল ঠিকানা">
+
+        <input type="password" placeholder="পাসওয়ার্ড তৈরি করুন" required>
+
+        <button type="submit">নিবন্ধন করুন</button>
+
+    </form>
+</div>
+<script>
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    alert("অভিনন্দন! আপনার সদস্য নিবন্ধন সফল হয়েছে।");
+
+    this.reset();
+
+});
+</script></body>
+</html>
